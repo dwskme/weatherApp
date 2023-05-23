@@ -1,9 +1,9 @@
+
 type Props = {
-  iconName: string;
+  imageName: string;
 };
-
 const Icons = (props: Props) => {
-  return <div>{props.iconName}</div>;
+  const imagePath = '/' + props.imageName;
+  return <img src={imagePath} alt={props.imageName} height="50px" width="50px" />;
 };
-
 export default Icons;

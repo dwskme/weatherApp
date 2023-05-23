@@ -1,8 +1,10 @@
+
 const TimeLine = () => {
+
   return (
-    <>
-      <h2>How's the temperature today?</h2>
-    </>
+    <div className="timeline">
+      <div className="timeline-title">How's the temperature today?</div>
+    </div>
   );
 };
 

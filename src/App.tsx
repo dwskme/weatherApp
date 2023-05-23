@@ -1,7 +1,7 @@
 import "./App.css";
-import AirCard from "./components/AirCard";
-import Predictions from "./components/Predictions";
+import SideSection from "./components/SideSection";
 import TimeLine from "./components/TimeLine";
+import Tomorrow from "./components/Tomorrow";
 import WeatherCard from "./components/WeatherCard";
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
             Weather App by <span>Samir KC.</span>
           </h1>
           <div className="search">
-            <input type="text" name="search" placeholder="Search something" />
+            <input type="text" name="search" placeholder="Search your City..." />
             <button type="submit">
               <label htmlFor="search">search</label>
               <div className="search-icon" />
@@ -21,11 +21,14 @@ function App() {
         </div>
         <div className="card-holder">
           <WeatherCard />
-          <AirCard />
+          <WeatherCard />
         </div>
+        <div className="timeline-holder">
         <TimeLine />
+        <Tomorrow/>
+        </div>
       </div>
-      <Predictions />
+      <SideSection />
     </>
   );
 }

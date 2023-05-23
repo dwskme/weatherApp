@@ -1,6 +1,9 @@
-#root {
-  margin: auto;
+* {
+  margin: 0;
   padding: 0;
+}
+
+#root {
   text-align: center;
   display: flex;
   align-content: space-around;
@@ -10,21 +13,18 @@
 
 #main {
   background-color: #000;
+  width: 1100px;
 }
+
 .header {
   width: auto;
-  background-color: #fefefe;
+  background-color: #fafafe;
   display: flex;
-  color: #a0a0a0;
+  color: #0f0f0f;
 }
 .header-text {
   font-weight: 500;
   width: 300px;
-}
-
-.header span {
-  font-family: "Marck Script", cursive;
-  font-size: 32px;
 }
 
 /* input start */
@@ -35,7 +35,7 @@
   height: 3rem;
   padding-left: 1.5rem;
   border-radius: 1.5rem;
-  background: #ffffff;
+  background: #bcd7df;
   box-shadow: 0 1.25rem 5rem -1rem rgba(0, 0, 30, 0.5);
   transition: transform 200ms ease-in-out;
   margin: auto;
@@ -118,52 +118,251 @@
 .search:has(input:focus)::before {
   opacity: 1;
 }
-
 /* input end */
+
 .card-holder {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
+  background-color: #aff;
+  padding: 20px;
 }
-
-.card-text {
-  padding: 0;
-  margin: 0;
+.weather-card {
+  position: relative;
+}
+.card-icons img {
+  position: absolute;
+  top: 25px;
+  left: 20px;
 }
 .card-text-type {
-  font-size: 20px;
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  top: 10px;
+  left: 80px;
 }
 .card-text-qtn {
-  font-size: 12px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: normal;
+  top: 50px;
+  left: 80px;
 }
 .card-text-current-temp {
-  font-size: 22px;
+  position: absolute;
+  font-size: 64px;
+  font-weight: 600;
+  top: 90px;
+  left: 30px;
 }
-.card-text-min-temp {
-  font-size: 8px;
+.card-badge {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f2ecd4;
+  color: #0a0a0a;
+  width: auto;
+  padding: 5px;
+  border-radius: 10px;
 }
-.card-text-weather-details {
-  font-size: 22px;
+.card-min {
+  top: 130px;
+  left: 200px;
 }
 
-.weather-card {
-  width: 450px;
-  border-radius: 28px;
-  height: 400px;
-  background-image: url("./assets/monsoon.jpg");
-  background-size: cover;
-  color: red;
+.card-text-weather-details {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 500;
+  top: 180px;
+  left: 30px;
 }
+.card-info-grid {
+  margin-left: 10px;
+  display: grid;
+  column-gap: 0px;
+  position: relative;
+  grid-template-columns: auto auto auto;
+  top: 260px;
+}
+.card-pressure {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #19283f;
+  color: #fafafa;
+  padding-top: 15px;
+  width: 140px;
+  height: 90px;
+  border-radius: 30px;
+}
+.card-pressure span {
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+}
+
+.card-visibility {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #cce16a;
+  color: #0a0a0a;
+  padding-top: 15px;
+  width: 140px;
+  height: 90px;
+  border-radius: 30px;
+}
+.card-visibility span {
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+}
+.card-humidity {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #abbada;
+  color: #0a0a0a;
+  padding-top: 15px;
+  width: 140px;
+  height: 90px;
+  border-radius: 30px;
+}
+
+.card-humidity span {
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+}
+
+.weather-card,
 .air-card {
-  width: 450px;
+  width: 500px;
   border-radius: 28px;
   height: 400px;
-  background-image: url("./assets/monsoon.jpg");
-  background-size: cover;
-  color: red;
+  background-color: #ffaffa;
+  color: #0a0a0a;
+}
+
+.timeline-holder {
+  display: flex;
+}
+
+.timeline {
+  position: relative;
+  width: 750px;
+  height: 350px;
+  background-color: purple;
+}
+.timeline-title {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  width: 250px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 200px;
+}
+.card-tomorrow {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-color: yellow;
+  color: #0a0a0a;
+  border-radius: 20px;
+}
+
+.card-tomorrow-title {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  top: 30px;
+  left: 40px;
+}
+.card-tomorrow-stats {
+  position: absolute;
+  font-size: 48px;
+  font-weight: 500;
+  top: 220px;
+  left: 40px;
+}
+
+.card-tomorrow-stats span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
 }
 .side-section {
   height: auto;
   width: 400px;
-  background-color: red;
+  background-color: #f2f2f2;
+  color: #0a0a0a;
+}
+.currentinfo {
+  position: relative;
+}
+.currentinfo-day {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.currentinfo-city {
+  position: absolute;
+  top: 75px;
+  left: 50px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.currentinfo-temperature {
+  position: absolute;
+  top: 25px;
+  left: 220px;
+  font-size: 64px;
+  font-weight: 600;
+  color: #e67e0e;
+}
+
+.currentinfo hr {
+  position: absolute;
+  top: 110px;
+  width: 400px;
+}
+
+.uvcard {
+  position: absolute;
+  width: 360px;
+  height: 120px;
+  background-color: #19283f;
+  border-radius: 20px;
+  top: 400px;
+  margin-left: 20px;
+  color: #fafafa;
+}
+.uv-icon {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+.uv-title {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.uv-level {
+  position: absolute;
+  top: 30px;
+  left: 220px;
+  font-size: 14px;
+}
+
+.uv-desc {
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  font-size: 16px;
+  font-weight: 400;
 }
