@@ -336,7 +336,7 @@
   height: 120px;
   background-color: #19283f;
   border-radius: 20px;
-  top: 400px;
+  top: 380px;
   margin-left: 20px;
   color: #fafafa;
 }
@@ -365,4 +365,42 @@
   left: 100px;
   font-size: 16px;
   font-weight: 400;
+}
+.weatherprediction-holder {
+  position: absolute;
+  top: 520px;
+  height: 405px;
+  width: 400px;
+}
+.prediction-card {
+  position: relative;
+  background-color: #dcd8cb;
+  height: 80px;
+  margin: 10px;
+}
+.prediction-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.prediction-date {
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.prediction-weather {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.prediction-temp {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  font-size: 20px;
+  font-weight: 600;
 }
