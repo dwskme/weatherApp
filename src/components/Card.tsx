@@ -1,33 +1,37 @@
+import styles from './Card.module.css'
 import Icons from "./ui/Icons";
-import "../App.css";
+import MiniStats from './ui/MiniStats';
+import Badge from './ui/Badge';
 
-const WeatherCard = () => {
+const Card = () => {
   return (
-    <div className="weather-card">
-      <span className="card-icons">
+    <div className={`${styles.card}`}>
+      <span className={`${styles.icon}`}>
         <Icons imageName="sun.png" />
       </span>
-      <div className="card-text-type">Weather</div>
-      <div className="card-text-qtn">What's the Weather...</div>
-      <h3 className="card-text-current-temp">22&deg;C</h3>
-      <span className="card-badge card-min">11&deg;C</span>
-      <h5 className="card-text-weather-details">Partly Cloudy</h5>
-      <div className="card-info-grid">
-        <div className="card-pressure">
-          Pressure
-          <span>800mb</span>
-        </div>
-        <div className="card-visibility">
-          Visibility
-          <span>800mb</span>
-        </div>
-        <div className="card-humidity">
-          Humidity
-          <span>800mb</span>
-        </div>
+      <div className={`${styles.title}`}>
+        Weather
+      </div>
+      <div className={`${styles.overviewTitle}`}>
+        The weather is chilly today...
+      </div>
+      <div className={`${styles.temperature}`}>
+        22&deg;C
+      </div>
+      <div className={`${styles.minMax}`}>
+        <Badge />
+        <Badge />
+      </div>
+      <div className={`${styles.overviewDetails}`}>
+        Partly Cloudy
+      </div>
+      <div className={`${styles.statsGrid}`}>
+        <MiniStats />
+        <MiniStats />
+        <MiniStats />
       </div>
     </div>
   );
 };
 
-export default WeatherCard;
+export default Card;

@@ -1,0 +1,9 @@
+.text {
+  background-color: #fafafc;
+  color: grey;
+  display: block;
+  width: fit-content;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}

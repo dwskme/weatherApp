@@ -1,0 +1,13 @@
+.miniCard {
+  width: fit-content;
+  background-color: #fa8c1b;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.miniStats {
+  font-size: 14px;
+  font-weight: 600;
+}

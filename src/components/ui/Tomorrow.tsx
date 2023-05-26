@@ -1,8 +1,9 @@
+import styles from './Tomorrow.module.css'
 const Tomorrow = () => {
   return (
-    <div className="card-tomorrow">
-      <div className="card-tomorrow-title">Tomorrow</div>
-      <div className="card-tomorrow-stats">
+    <div className={`${styles.cardTomorrow}`} >
+      <div className={`${styles.title}`}>Tomorrow</div>
+      <div className={`${styles.stats}`}>
         20&deg;C
         <span>Rainny</span>
       </div>
