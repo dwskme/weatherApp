@@ -1,8 +1,8 @@
 import "./App.css";
 import SideSection from "./components/SideSection";
-import TimeLine from "./components/TimeLine";
+import TimeLine from "./components/Timeline";
 import Tomorrow from "./components/Tomorrow";
-import WeatherCard from "./components/WeatherCard";
+import WeatherCard from "./components/Card";
 function App() {
   return (
     <>

@@ -1,4 +1,4 @@
-import Icons from "./Icons"
+import Icons from "./ui/Icons"
 const PredictionCard = () => {
   return (
     <div className="prediction-card">
