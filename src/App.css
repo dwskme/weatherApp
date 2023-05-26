@@ -12,8 +12,8 @@
 }
 
 #main {
-  background-color: #000;
-  width: 1100px;
+  background-color: #fafa;
+  max-width: 60%;
 }
 
 .header {
@@ -23,8 +23,9 @@
   color: #0f0f0f;
 }
 .header-text {
+  padding: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  width: 300px;
 }
 
 /* input start */
@@ -123,21 +124,26 @@
 .card-holder {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #aff;
-  padding: 20px;
 }
 .weather-card {
   position: relative;
+  width: 25vw;
+  border-radius: 1.8rem;
+  height: 45vh;
+  background-color: #ffaffa;
+  color: #0a0a0a;
 }
+
 .card-icons img {
   position: absolute;
-  top: 25px;
-  left: 20px;
+  top: 1.3rem;
+  left: 1.2rem;
 }
 .card-text-type {
   position: absolute;
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: bold;
   top: 10px;
   left: 80px;
@@ -151,14 +157,14 @@
 }
 .card-text-current-temp {
   position: absolute;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   top: 90px;
   left: 30px;
 }
 .card-badge {
   position: absolute;
-  font-size: 18px;
+  font-size: 1.15rem;
   font-weight: 600;
   background-color: #f2ecd4;
   color: #0a0a0a;
@@ -173,13 +179,13 @@
 
 .card-text-weather-details {
   position: absolute;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
   top: 180px;
   left: 30px;
 }
 .card-info-grid {
-  margin-left: 10px;
+  margin-left: 0.8rem;
   display: grid;
   column-gap: 0px;
   position: relative;
@@ -192,8 +198,8 @@
   background-color: #19283f;
   color: #fafafa;
   padding-top: 15px;
-  width: 140px;
-  height: 90px;
+  width: 7vw;
+  height: 10vh;
   border-radius: 30px;
 }
 .card-pressure span {
@@ -208,8 +214,8 @@
   background-color: #cce16a;
   color: #0a0a0a;
   padding-top: 15px;
-  width: 140px;
-  height: 90px;
+  width: 7vw;
+  height: 10vh;
   border-radius: 30px;
 }
 .card-visibility span {
@@ -223,8 +229,8 @@
   background-color: #abbada;
   color: #0a0a0a;
   padding-top: 15px;
-  width: 140px;
-  height: 90px;
+  width: 7vw;
+  height: 10vh;
   border-radius: 30px;
 }
 
@@ -234,38 +240,29 @@
   display: block;
 }
 
-.weather-card,
-.air-card {
-  width: 500px;
-  border-radius: 28px;
-  height: 400px;
-  background-color: #ffaffa;
-  color: #0a0a0a;
-}
-
 .timeline-holder {
   display: flex;
 }
 
 .timeline {
   position: relative;
-  width: 750px;
-  height: 350px;
+  width: 50vw;
+  height: 45vh;
   background-color: purple;
 }
 .timeline-title {
   position: absolute;
   left: 30px;
   top: 10px;
-  width: 250px;
+  width: 20vw;
   text-align: left;
   font-size: 28px;
   font-weight: 200px;
 }
 .card-tomorrow {
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 20vw;
+  height: 45vh;
   background-color: yellow;
   color: #0a0a0a;
   border-radius: 20px;
@@ -273,28 +270,28 @@
 
 .card-tomorrow-title {
   position: absolute;
-  font-size: 18px;
+  font-size: 1.115rem;
   font-weight: 500;
   top: 30px;
   left: 40px;
 }
 .card-tomorrow-stats {
   position: absolute;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
-  top: 220px;
+  top: 30vh;
   left: 40px;
 }
 
 .card-tomorrow-stats span {
   display: block;
-  font-size: 18px;
+  font-size: 1.115rem;
   font-weight: 600;
   text-align: left;
 }
 .side-section {
   height: auto;
-  width: 400px;
+  width: 25vw;
   background-color: #f2f2f2;
   color: #0a0a0a;
 }
@@ -305,21 +302,21 @@
   position: absolute;
   top: 40px;
   left: 50px;
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 .currentinfo-city {
   position: absolute;
   top: 75px;
   left: 50px;
-  font-size: 18px;
+  font-size: 1.115rem;
   font-weight: 400;
 }
 .currentinfo-temperature {
   position: absolute;
   top: 25px;
   left: 220px;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   color: #e67e0e;
 }
@@ -327,13 +324,13 @@
 .currentinfo hr {
   position: absolute;
   top: 110px;
-  width: 400px;
+  width: 20vw;
 }
 
 .uvcard {
   position: absolute;
-  width: 360px;
-  height: 120px;
+  width: 20vw;
+  height: 15vh;
   background-color: #19283f;
   border-radius: 20px;
   top: 380px;
@@ -349,33 +346,33 @@
   position: absolute;
   top: 20px;
   left: 100px;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
 }
 .uv-level {
   position: absolute;
   top: 30px;
   left: 220px;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 .uv-desc {
   position: absolute;
   top: 75px;
   left: 100px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .weatherprediction-holder {
   position: absolute;
   top: 520px;
-  height: 405px;
-  width: 400px;
+  height: 40vh;
+  width: 25vw;
 }
 .prediction-card {
   position: relative;
   background-color: #dcd8cb;
-  height: 80px;
+  height: 10vh;
   margin: 10px;
 }
 .prediction-icon {
@@ -387,20 +384,20 @@
   position: absolute;
   top: 5px;
   left: 100px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .prediction-weather {
   position: absolute;
   top: 30px;
   left: 100px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .prediction-temp {
   position: absolute;
   top: 20px;
   left: 250px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
