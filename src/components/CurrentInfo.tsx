@@ -1,18 +1,17 @@
-
+import styles from './CurrentInfo.module.css';
 
 const CurrentInfo = () => {
   return (
-    <div className="currentinfo">
-      <div className="currentinfo-day">
+    <div className={`${styles.currentinfo}`}>
+    <div className={`${styles.currentday}`}>
       Sunday
       </div>
-      <div className="currentinfo-city">
+      <div className={`${styles.currentCity}`}>
         Tansen, Palpa
       </div>
-      <div className="currentinfo-temperature">
+      <div className={`${styles.currentTemp}`}>
         22&deg;C
       </div>
-      <hr />
     </div>
   )
 }

@@ -1,19 +1,20 @@
+import Badge from "./Badge"
 import Icons from "./Icons"
-
+import styles from './UVCard.module.css'
 
 const UVCard = () => {
   return (
-    <div className="uvcard">
-      <span className="uv-icon">
+    <div className={`${styles.uvcard}`}>
+      <span className={`${styles.icon}`}>
       <Icons imageName="sun.png"/>
       </span>
-      <div className="uv-title">
+      <div className={`${styles.data}`}>
         20 UVI
       </div>
-      <span className="card-badge uv-level">
-        Moderate
+      <span className={`${styles.badge}`}>
+      <Badge/>
       </span>
-      <div className="uv-desc">
+      <div className={`${styles.details}`}>
         Moderate Risk from UV Rays.
       </div>
     </div>

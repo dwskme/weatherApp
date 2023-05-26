@@ -19,9 +19,7 @@ function App() {
           <Tomorrow/>
           </div>
         </section>
-        <aside>
           <SideSection/>
-        </aside>
       </div>
     </div>
   );

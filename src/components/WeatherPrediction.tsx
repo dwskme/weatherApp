@@ -1,12 +1,14 @@
 import PredictionCard from "./PredictionCard"
-
+import styles from "./WeatherPrediction.module.css"
 const WeatherPrediction = () => {
   return (
-    <div className="weatherprediction-holder">
-      <h1>Weather Predictions</h1>
-      {/* <PredictionCard/>
+    <div className={`${styles.WeatherPrediction}`}>
+      <span>Weather Predictions</span>
       <PredictionCard/>
-      <PredictionCard/> */}
+      <PredictionCard/>
+      <PredictionCard/>
+      <PredictionCard/>
+      <PredictionCard/>
     </div>
   )
 }

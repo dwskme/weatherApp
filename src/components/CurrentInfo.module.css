@@ -1,0 +1,27 @@
+.currentinfo {
+  position: relative;
+  color: black;
+  background-color: #acefac;
+  height: 10%;
+}
+.currentday {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.currentCity {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.currentTemp {
+  position: absolute;
+  left: 70%;
+  top: 25%;
+  font-size: 34px;
+  font-weight: 400;
+}

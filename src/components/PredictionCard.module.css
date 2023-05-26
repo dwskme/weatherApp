@@ -1,0 +1,30 @@
+.predictionCard {
+  position: relative;
+  background-color: #cacaca;
+  margin: 10px;
+  height: 15%;
+}
+
+.icon {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+.date {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  font-size: 18px;
+}
+.weather {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 18px;
+}
+.temperature {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  font-size: 18px;
+}

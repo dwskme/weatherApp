@@ -1,0 +1,28 @@
+.uvcard {
+  position: relative;
+  background-color: purple;
+  height: 15%;
+  border-radius: 20px;
+}
+.icon {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.data {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.badge {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  font-size: 16px;
+}
+.details {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  font-size: 16px;
+}
