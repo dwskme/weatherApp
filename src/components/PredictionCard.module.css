@@ -1,7 +1,8 @@
 .predictionCard {
+  font-size:1rem;
   position: relative;
   background-color: #cacaca;
-  margin: 10px;
+  margin: 0.8em;
   height: 15%;
 }
 
@@ -14,17 +15,17 @@
   position: absolute;
   top: 25%;
   left: 20%;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 .weather {
   position: absolute;
   top: 50%;
   left: 20%;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 .temperature {
   position: absolute;
   top: 40%;
   left: 60%;
-  font-size: 18px;
+  font-size: 1.2rem;
 }

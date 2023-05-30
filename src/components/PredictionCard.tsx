@@ -4,7 +4,7 @@ const PredictionCard = () => {
   return (
     <div className={`${styles.predictionCard}`}>
       <span className={`${styles.icon}`}>
-        <Icons imageName="sun.png"/>
+        <Icons imageName="sun.png" heightValue="50px" widthValue="50px"/>
       </span>
       <div className={`${styles.date}`}>
         November 10

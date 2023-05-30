@@ -1,24 +1,26 @@
 .cardTomorrow {
+  font-size:1.25rem;
+  font-weight:600;
   background: #5aeacf;
-  margin: 20px 0;
+  margin: 1.2em 0;
   width: 30%;
   height: 100%;
   position: relative;
-  border-radius: 20px;
+  border-radius: 1.2em;
 }
 .title {
   position: absolute;
-  font-size: 20px;
+  font-size: 1.25rem;
   top: 10%;
   left: 5%;
 }
 .stats {
   position: absolute;
-  font-size: 28px;
+  font-size: 1.8rem;
   top: 70%;
   left: 10%;
 }
 .stats span {
   display: block;
-  font-size: 18px;
+  font-size: 1.2rem;
 }

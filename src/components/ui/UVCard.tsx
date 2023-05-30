@@ -6,7 +6,7 @@ const UVCard = () => {
   return (
     <div className={`${styles.uvcard}`}>
       <span className={`${styles.icon}`}>
-      <Icons imageName="sun.png"/>
+      <Icons imageName="sun.png" heightValue="50px" widthValue="50px"/>
       </span>
       <div className={`${styles.data}`}>
         20 UVI
