@@ -6,6 +6,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: calc(8px + 0.390625vw);
+  color:#1a2940;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;

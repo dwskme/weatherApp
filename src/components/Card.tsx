@@ -5,7 +5,7 @@ import Badge from './ui/Badge';
 
 const Card = () => {
   return (
-    <div className={`${styles.card}`}>
+    <div className={`${styles.card}`} >
       <span className={`${styles.icon}`}>
         <Icons imageName="sun.png" heightValue='50px' widthValue='50px'/>
       </span>
