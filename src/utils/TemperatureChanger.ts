@@ -1,7 +1,5 @@
-export const convertF = (x:number) => {
-  return convertC(x)*1.8 + 32;
-}
+const convertC = (x: number) => x - 273.15;
 
-export const convertC = (x:number) =>{
-  return x - 273.15;
-}
+const convertF = (x: number) => convertC(x) * 1.8 + 32;
+
+export { convertC, convertF };
